@@ -1,0 +1,205 @@
+head,body{
+background-image:url(fireworks-6948734_1280.jpg);
+  background-size: 100% 1000px; 
+  background-repeat: repeat-y;
+}
+
+
+
+.main-img {
+  position: relative;
+  width: 100%;
+  height: 600px; /* 高さは調整 */
+  overflow: hidden;
+  z-index:2 ;
+}
+
+.main-img img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* 全スライド共通設定 */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  opacity: 0;
+  animation: fadeAnimation 16s infinite;
+}
+
+/* 各スライドの開始タイミングをずらす */
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 4s; }
+.slide:nth-child(3) { animation-delay: 8s; }
+.slide:nth-child(4) { animation-delay: 12s; }
+
+@keyframes fadeAnimation {
+  0% { opacity: 0; }
+  5% { opacity: 1; }
+  25% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.photo-text {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.photo-text h1 {
+  margin: 0;
+  padding: 20px 0;
+  background-color: rgba(255, 0, 30, 0.489); /* 背景赤・少し透ける */
+  color: white; /* 文字は白 */
+  font-size: 2.5em;
+  font-weight: bold;
+  width: 100%; /* 横画面いっぱい */
+}
+
+
+
+
+
+
+
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about li {
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 30px;
+  color: white;
+}
+
+
+ .main h1 {
+  border-top: 1px solid white;
+}
+
+
+
+
+
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-item {
+  width: 45%; /* テキストを画像上に置くための基準点 */
+  overflow: hidden;
+  border-radius: 8px;
+  display: inline-block;
+  position:relative;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+
+
+.menu h2{
+position:absolute;
+ bottom: 0; /* 下に固定 */
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+
+
+.main-osirase img{
+  width:300px;
+  height:200px;
+  border-radius: 8px;
+}
+
+.set-menu,.hiyasimen,.otsumami-set{
+  position:relative;
+  display: inline-block;
+}
+
+.set-menu h2,.hiyasimen h2,.otsumami-set h2{
+position:absolute;
+ bottom: 0; /* 下に固定 */
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+label{
+  color: white;
+  font-size: 20px;
+}
+
+.message{
+  padding: 50px;
+}
+
+button{
+  margin-left: 250px;
+}
+
+
+
+li{
+  list-style:none;
+  color:white;
+}
+
+a{
+  color:white;
+}
+
+.service-option a{
+  font-size:30px;
+}
+
+p{
+  color:white;
+  font-size: 30px;
+}
+
+h1{
+color:white;
+}
+
+
+
+footer{
+  background-color: darkgray;
+}
+
+
+
+
